@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGE CALCULATOR APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Inputs -->
+        <div class="inputs">
+            <!-- Day input -->
+            <div class="inputs-groub">
+                <label for="day">DAY</label>
+                <input type="number" value="" class="dayInput" placeholder="DD">
+            </div>
+            <!-- Month input -->
+            <div class="inputs-groub">
+                <label for="month">MONTH</label>
+                <input type="number" value="" class="monthInput" placeholder="MM">
+            </div>
+            <!-- Year input -->
+            <div class="inputs-groub">
+                <label for="year">YEAR</label>
+                <input type="number" value="" class="yearInput" placeholder="YYYY">
+            </div>
+        </div>
+        <!-- hr -->
+        <hr>
+        <!-- Arrow -->
+        <div class="arrow">
+            <img src="images/icon-arrow.svg" alt="arrow">
+        </div>
+         <!-- Results -->
+        <div class="output">
+                <!-- Years Output -->
+            <div class="yearsOutPut">
+                <span class="yd1 dash">-</span>
+                <span class="yd2 dash">-</span>
+                <span class="years time">years</span>
+            </div>
+                <!-- Months Output -->
+            <div class="monthsOutPut">
+                <span class="md1 dash">-</span>
+                <span class="md2 dash">-</span>
+                <span class="Months time">months</span>
+            </div>
+                <!-- Days Output -->
+            <div class="DaysOutPut">
+                <span class="dd1 dash">-</span>
+                <span class="dd2 dash">-</span>
+                <span class="Days time">days</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

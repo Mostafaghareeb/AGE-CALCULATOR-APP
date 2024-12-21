@@ -1,0 +1,153 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --OffWhite: hsl(0, 0%, 94%);
+    --LightGrey: hsl(0, 0%, 86%);
+    --SmokeyGrey: hsl(0, 1%, 44%);
+    --OffBlack: hsl(0, 0%, 8%);
+    --purple-color: hsl(259, 100%, 65%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: var(--OffWhite);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: var(--white);
+    height: 450px;
+    width: 55%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 140px;
+    border-bottom-left-radius: 20px;
+}
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+    width: 60%;
+}
+.inputs-groub {
+    display: flex;
+    flex-direction: column; 
+}
+
+input {
+    width: 75px;
+    padding: 7px;
+    border-radius: 7px;
+    border: #22222230 solid 1px;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+label {
+    font-size: 12px;
+    opacity: .8;
+    margin-bottom: 5px;
+}
+
+hr {
+    opacity: .3;
+    width: 80%;
+    margin-left: 25px;
+}
+.arrow {
+    width: 89%;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    position: relative;
+    top: -20px;
+}
+
+img {
+    background-color: var(--purple-color);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.output {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 55px;
+    margin-top: -20px;
+    
+}
+span {
+    font-size: 60px;
+    font-weight: bolder;
+}
+.dash {
+    color: var(--purple-color);
+}
+.time {
+    color: var(--OffBlack);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: 50%;
+        margin-top: -240px;
+    }
+
+    .inputs {
+        align-items: center;
+        width: 100%;
+    }
+
+    .inputs-groub {
+        margin-bottom: 15px;
+    }
+
+    input {
+        width: 60%; 
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 10px;
+    }
+
+    hr {
+        width: 90%;
+    }
+
+    .arrow {
+        width: 100%;
+        top: -20px;
+        justify-content: center;
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .output {
+        margin-left: 50px;
+        margin-top: 0;
+        align-items: flex-start;
+    }
+
+    span {
+        font-size: 40px;
+    }
+}
+
+
